@@ -1,4 +1,5 @@
 syntax enable
+
 autocmd GUIEnter * set vb t_vb= " for your GUI
 autocmd VimEnter * set vb t_vb=
 
