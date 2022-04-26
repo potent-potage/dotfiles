@@ -8,7 +8,7 @@ mklc() {
 	dirname=$(echo $1 | tr '-' '_')
 	curr_num=`cat current_problem.txt`
 	echo "Creating directory for problem #$curr_num."
-	mkdir -p $curr_num_$dirname; cd $curr_num_$dirname; touch $curr_num_$dirname.rb
+	mkdir -p ${curr_num}_${dirname}; cd ${curr_num}_${dirname}; touch ${curr_num}_${dirname}.rb
 	expr $curr_num + 1 > ../current_problem.txt
 }
 
